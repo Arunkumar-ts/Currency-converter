@@ -1,0 +1,96 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color:#9873fe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    padding: 10px;
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items:center;
+    max-width:400px;
+    background-color: white;
+    max-height: 650px;
+    border-radius: 10px;
+}
+.container h2{
+    margin:5px;
+    padding: 4px;
+    font-size: 22px;
+}
+#amount{
+    text-align: left;
+    width: 310px;
+    font-weight:600;
+    padding: 0px 4px;
+}
+.container #inputdata{
+    width: 310px;
+    height: 40px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    margin: 10px 6px;
+    border-bottom: 3px solid #9873fe;
+}
+.container .selects select{
+    width:145px;
+    padding:7px;
+    margin: 10px 6px;
+    outline: none;
+    border-radius: 2px;
+    background-color:#9873fe;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    cursor: pointer;
+}
+option{
+    height: 2px;
+    width: 10px;
+}
+.container button{
+    width: 310px;
+    padding:7px;
+    margin: 10px 6px;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight:500;
+    background-color:#9873fe;
+    cursor: pointer;
+    color:white;
+    outline: none;
+    border: none;
+}
+.container button:hover{
+    background-color:#7459be;
+}
+.container button:active{
+    background-color:#9873fe;
+}
+.container #outputdata{
+    width: 310px;
+    padding:7px;
+    margin: 10px 6px;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight:500;
+    background-color:#d3c8f0;
+    cursor: pointer;
+    color:white;
+    outline: none;
+    border: none;
+    color:black;
+    text-align: center;
+}

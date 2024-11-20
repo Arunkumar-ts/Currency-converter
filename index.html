@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency converter.com</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="currency png.png" alt="currency image" width="100" height="100">
+        <h2>CURRENCY CONVERTER</h2>
+        <p id="amount">Amount:</p>
+        <input type="number" placeholder="Enter here" id="inputdata">
+        <div class="selects">
+            <select id="select1" onmousedown="if(this.options.length>8){this.size=4;}"  onchange='this.size=0;' onblur="this.size=0;"></select>
+            <select id="select2"></select>
+        </div>
+        <button id="btn">Convert</button>
+        <input type="text" id="outputdata" readonly>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
