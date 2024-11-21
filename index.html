@@ -13,11 +13,17 @@
         <p id="amount">Amount:</p>
         <input type="number" placeholder="Enter here" id="inputdata">
         <div class="selects">
-            <select id="select1" onmousedown="if(this.options.length>8){this.size=4;}"  onchange='this.size=0;' onblur="this.size=0;"></select>
-            <select id="select2"></select>
+            <select id="select1" onmousedown="if(this.options.length>8){this.size=4;}"  onchange='this.size=0;' onblur="this.size=0;">
+                <option class="opt" value="FROM">FROM</option>
+            </select>
+            <select id="select2">
+                <option class="opt" value="TO">TO</option>
+            </select>
         </div>
         <button id="btn">Convert</button>
+        <button onclick="clearfn()">Clear</button>
         <input type="text" id="outputdata" readonly>
+        
     </div>
 </body>
 <script src="script.js"></script>

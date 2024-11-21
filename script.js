@@ -23,7 +23,12 @@ btn.addEventListener('click',()=>{
     let country1=select1.value;
     let country2=select2.value;
     inputvalue=inputdata.value;
-    convert(country1,country2,inputvalue);
+    if(country1=="FROM" || country2=="TO" ||Number(inputvalue)<=0){
+        outputdata.value="Enter the Amount";
+    }
+    else{
+        convert(country1,country2,inputvalue);
+    }
 });
 
 function convert(curr1,curr2,amount){
@@ -40,3 +45,7 @@ function convert(curr1,curr2,amount){
         }
     });
 }  
+
+function clearfn(){
+    location.reload();
+}
