@@ -47,5 +47,8 @@ function convert(curr1,curr2,amount){
 }  
 
 function clearfn(){
-    location.reload();
+    outputdata.value="";
+    select1.value="FROM";
+    select2.value="TO";
+    inputdata.value="";
 }
